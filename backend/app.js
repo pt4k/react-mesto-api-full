@@ -22,7 +22,9 @@ mongoose.connect('mongodb://localhost:27017/mestodb');
 
 const options = {
   origin: [
+    'http://pishchenko.mesto.students.nomoredomains.sbs',
     'https://pishchenko.mesto.students.nomoredomains.sbs',
+    'http://api.pt4k.mesto.students.nomoredomains.sbs',
     'https://api.pt4k.mesto.students.nomoredomains.sbs',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
