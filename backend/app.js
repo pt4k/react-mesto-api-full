@@ -13,7 +13,7 @@ const err = require('./middlewares/errors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const urlRegExp = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w.-]+)+[\w\-._~:/?#[\]@!$&'()*+,;=.]+$/;
-
+const test;
 const app = express();
 
 const { PORT = 3005 } = process.env;
