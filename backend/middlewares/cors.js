@@ -4,8 +4,6 @@ const allowedCors = [
   'https://pishchenko.mesto.students.nomoredomains.sbs',
   'localhost:3000',
 ];
-const test;
-test = 2;
 
 module.exports = (req, res, next) => {
   const { origin } = req.headers; // Сохраняем источник запроса в переменную origin
