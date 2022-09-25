@@ -215,6 +215,10 @@ function App() {
   const onRegister = ({ email, password }) => {
     return register(email, password)
       .then((res) => {
+        if (res.token) {
+          localStorage.setItem('jwt', res.token);
+          setLoggedIn(true);
+        }
         const { email, _id } = res;
         setUserData({
           email,
